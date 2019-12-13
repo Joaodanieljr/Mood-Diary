@@ -1,4 +1,4 @@
-package com.joaodanieljr.mooddiary
+package com.joaodanieljr.mooddiary.Activities
 
 //criado por Joao Jr
 //Este eh o meu primeiro App
@@ -8,12 +8,10 @@ package com.joaodanieljr.mooddiary
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import com.joaodanieljr.mooddiary.ui.main.SectionsPagerAdapter
+import com.joaodanieljr.mooddiary.Adapter.Adapter
+import com.joaodanieljr.mooddiary.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         val viewPager: ViewPager = findViewById(R.id.view_pager)
 
         //Instanciando um Adapter
-        val fragmentAdapter = Adapter(supportFragmentManager)
+        val fragmentAdapter =
+            Adapter(supportFragmentManager)
 
         //passando o adapter para a view pager
         viewPager.adapter = fragmentAdapter

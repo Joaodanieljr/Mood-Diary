@@ -1,4 +1,4 @@
-package com.joaodanieljr.mooddiary
+package com.joaodanieljr.mooddiary.Adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
