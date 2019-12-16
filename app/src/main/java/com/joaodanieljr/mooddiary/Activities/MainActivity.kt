@@ -5,7 +5,9 @@ package com.joaodanieljr.mooddiary.Activities
 //inicio em 11/12/2019
 //Comentarios com o objetivo de ir aprendendo.
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.viewpager.widget.ViewPager
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         //declarando a view Pager
         val viewPager: ViewPager = findViewById(R.id.view_pager)
@@ -43,5 +46,14 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
+
     }
+
+    fun soma(a: Int, b: Int): Int {
+        return a + b
+    }
+
+
 }
+
