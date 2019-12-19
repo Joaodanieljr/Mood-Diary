@@ -2,9 +2,8 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-    <gradient
-        android:startColor="@color/ColorButtons"
-        android:endColor="@color/ColorButtons" />
+    <solid
+        android:color="@color/ColorButtons" />
 
 
     <padding android:left="6dp"

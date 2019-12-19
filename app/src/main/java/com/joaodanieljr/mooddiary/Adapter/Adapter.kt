@@ -7,7 +7,7 @@ import com.joaodanieljr.mooddiary.fragments.AcompanhamentoFragment
 import com.joaodanieljr.mooddiary.fragments.GraficosFragment
 import com.joaodanieljr.mooddiary.fragments.HumorDiarioFragment
 
-class Adapter(fm: FragmentManager?) : FragmentPagerAdapter(fm){
+class Adapter(fm: FragmentManager) : FragmentPagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
         return when(position){
             0 -> {HumorDiarioFragment()}

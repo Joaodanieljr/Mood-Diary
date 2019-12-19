@@ -9,7 +9,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.joaodanieljr.mooddiary"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -37,4 +37,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     //noinspection GradleCompatible
     implementation "com.android.support:design:26.1.0"
+    implementation "com.prolificinteractive:material-calendarview:1.4.3"
 }
