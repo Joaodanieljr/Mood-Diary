@@ -3,10 +3,34 @@
     <string name="logo">imagem de um circulo roxo com um texto azul escrito my mood</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <!--Tela Login-->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="esqueceuSenha">Esqueceu a senha ?</string>
-    <string name="Cadastrar">Cadastre-se</string>
+    <string name="cadastrar">Cadastre-se</string>
     <string name="buttonLogin">Login</string>
-    <string name="EmailLogin">Digite seu Email</string>
+    <string name="emailLogin">Digite seu Email</string>
     <string name="senhaLogin">Digite sua senha</string>
+
+    <!--Tela Cadastro-->
+    <string name="cadastro_">Cadastro</string>
+    <string name="nome_cadastro">Qual o seu nome? </string>
+    <string name="nome_cadastroHint">Nome </string>
+    <string name="email_cadastro">Digite um Email valido</string>
+    <string name="email_cadastroHint">Email@mymood.com.br</string>
+    <string name="confirmaEmail_cadastro">Confirme seu Email</string>
+    <string name="confirmaEmail_cadastroHint">Email@mymood.com.br</string>
+    <string name="senha_cadastro">Escolha uma Senha</string>
+    <string name="senha_cadastroHint">Senha</string>
+    <string name="confirmaSenha_cadastro">Confirme sua Senha</string>
+    <string name="confirmaSenha_cadastroHint">Confirme sua Senha</string>
+    <string name="aniversario_cadastro">Que dia voce nasceu?</string>
+    <string name="concluir_cadastro">CONCLUIR</string>
+    <string name="esqueceuTitulo">Esqueceu sua senha ?</string>
+    <string name="emailEsqueceu">Digite um Email cadastrado</string>
+    <string name="esqueceuEmailHint">Digite uma email</string>
+    <string name="esqueceuButton">Enviar</string>
+    <string name="esqueceuInformacao">Iremos enviar sua senha para o email acima. Não esqueça de
+        verificar a sua caixa de spam ou lixeira caso demore mais que alguns minutos</string>
+
+
 </resources>

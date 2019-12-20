@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.CadastroActivity"></activity>
+        <activity android:name=".Activities.EsqueceuSenhaActivity"
+            android:theme="@style/TelasDeLoginTheme"></activity>
+        <activity android:name=".Activities.CadastroActivity"
+            android:theme="@style/TelasDeLoginTheme"/>
         <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +23,7 @@
         <activity
             android:name=".Activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

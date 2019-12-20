@@ -3,8 +3,10 @@
     <color name="colorPrimary">#0F3347</color>
     <color name="colorPrimaryDark">#092D42</color>
     <color name="colorAccent">#E6B721</color>
-    <color name="lineOfText">#FF5722</color>
+    <color name="lineOfText">#FFFFFF</color>
     <color name="ColorButtons">#E6B721</color>
     <color name="textLink_color">#0F3347</color>
+    <color name="background_color_yellow">#E6B721</color>
+    <color name="buttonColor_blue">#0F3347</color>
 
 </resources>
