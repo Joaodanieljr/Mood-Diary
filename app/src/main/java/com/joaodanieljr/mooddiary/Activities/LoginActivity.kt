@@ -39,6 +39,8 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this,EsqueceuSenhaActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 
 }

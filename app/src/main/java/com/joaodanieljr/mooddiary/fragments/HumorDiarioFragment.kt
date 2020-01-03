@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.joaodanieljr.mooddiary.CustomCalendar.CalendarView
 import com.joaodanieljr.mooddiary.R
-import java.util.*
+
 
 
 /**
@@ -21,19 +21,13 @@ class HumorDiarioFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        val view: View = inflater.inflate(R.layout.fragment_humor_diario, container, false)
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_humor_diario, container, false)
+        return view
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
-        var calendar: Calendar = Calendar.getInstance()
-
-        var textView: TextView = view.findViewById(R.id.textDatePrincipal)
-
-        textView.setText(calendar.get(Calendar.YEAR).toString())
 
 
-    }
 
 }

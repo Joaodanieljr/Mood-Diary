@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Titulo com mes e ano-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp">
+
+        <!--Botao para retornar o mes-->
+        <ImageView
+            android:id="@+id/buttonCalendarBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_button_back_calendar_blue"/>
+
+        <!--Botao para avancar o mes-->
+        <TextView
+            android:id="@+id/titleCustomCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/buttonCalendarBack"
+            android:layout_toLeftOf="@id/buttonCalendarnext"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/toolbar_custom_calendar"/>
+
+        <!--Botao para avancar o mes-->
+        <ImageView
+            android:id="@+id/buttonCalendarnext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_button_next_calendar_blue"/>
+    </RelativeLayout>
+
+    <!--Dias da semana-->
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/days_custom_calendar"
+            android:text="@string/dia_semana_1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/days_custom_calendar"
+            android:text="@string/dia_semana_2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/days_custom_calendar"
+            android:text="@string/dia_semana_3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/days_custom_calendar"
+            android:text="@string/dia_semana_4"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/days_custom_calendar"
+            android:text="@string/dia_semana_5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/days_custom_calendar"
+            android:text="@string/dia_semana_6"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/days_custom_calendar"
+            android:text="@string/dia_semana_7"/>
+    </LinearLayout>
+
+    <!--grid para os dias do mes-->
+    <GridView
+        android:id="@+id/calendarGrid"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:numColumns="7"/>
+
+
+</LinearLayout>

@@ -8,8 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/background_color_yellow">
+        android:layout_height="wrap_content">
 
 
         <TextView
@@ -20,7 +19,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:gravity="center"
-            android:text="@string/cadastro_"
+            android:text="@string/cadastro"
             android:textColor="@color/colorPrimary"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -134,13 +133,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:hint="@string/senha_cadastroHint"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewSenha" />
 
@@ -187,12 +186,12 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="49dp"
-            android:layout_height="34dp"
+            android:layout_width="59dp"
+            android:layout_height="47dp"
             android:layout_marginStart="126dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:background="@drawable/ic_date_range_blue_24dp"
+            android:background="@drawable/calendar"
             app:layout_constraintEnd_toStartOf="@+id/textView2"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"

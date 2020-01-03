@@ -12,11 +12,10 @@
     <string name="senhaLogin">Digite sua senha</string>
 
     <!--Tela Cadastro-->
-    <string name="cadastro_">Cadastro</string>
+    <string name="cadastro">Cadastro</string>
     <string name="nome_cadastro">Qual o seu nome? </string>
     <string name="nome_cadastroHint">Nome </string>
     <string name="email_cadastro">Digite um Email valido</string>
-    <string name="email_cadastroHint">Email@mymood.com.br</string>
     <string name="confirmaEmail_cadastro">Confirme seu Email</string>
     <string name="confirmaEmail_cadastroHint">Email@mymood.com.br</string>
     <string name="senha_cadastro">Escolha uma Senha</string>
@@ -31,6 +30,17 @@
     <string name="esqueceuButton">Enviar</string>
     <string name="esqueceuInformacao">Iremos enviar sua senha para o email acima. Não esqueça de
         verificar a sua caixa de spam ou lixeira caso demore mais que alguns minutos</string>
+
+
+    <!-- CustomCalendar-->
+    <string name="dia_semana_1"> SEG</string>
+    <string name="dia_semana_2"> TER</string>
+    <string name="dia_semana_3"> QUA</string>
+    <string name="dia_semana_4"> QUI</string>
+    <string name="dia_semana_5"> SEX</string>
+    <string name="dia_semana_6"> SAB</string>
+    <string name="dia_semana_7"> DOM</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
 </resources>
