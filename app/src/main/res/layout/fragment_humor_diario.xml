@@ -18,13 +18,15 @@
             android:layout_width="match_parent"
             android:layout_height="380dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="5dp">
+            app:cardElevation="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
 
             <com.prolificinteractive.materialcalendarview.MaterialCalendarView
                 android:id="@+id/CalendarDiario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorAccent"
+                android:background="@color/lineOfText"
                 app:mcv_selectionColor="@color/colorPrimaryDark">
 
             </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
@@ -38,31 +40,52 @@
             android:elevation="5dp"
             android:padding="10dp"
             android:outlineAmbientShadowColor="@color/colorAccent"
-
             app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark">
 
                 <TextView
                     android:id="@+id/textViewjoao"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="12,DEZ de 2019" />
+                    android:text="12,DEZ de 2019"
+                    android:textColor="@color/lineOfText"/>
 
-                <SeekBar
-                    android:id="@+id/seekBar"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:background="@color/lineOfText"
-                    android:max="4"
-                    android:progress="2"
-                    android:thumb="@drawable/neutral"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimaryDark">
 
-                    />
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="270dp"
+                        android:layout_height="48dp"
+                        android:background="@color/lineOfText"
+                        android:max="4"
+                        android:progress="2"
+                        android:thumb="@drawable/neutral"
+                        android:progressBackgroundTint="@color/lineOfText"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:progressTint="@color/lineOfText"
+                        />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Save"
+                        android:background="@drawable/shape_button"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="8dp"
+                        android:elevation="5dp" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/textView3"
@@ -70,7 +93,10 @@
                     android:layout_height="wrap_content"
                     android:text="Normal Day"
                     android:textSize="18sp"
-                    android:gravity="center"/>
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="130dp"
+                    android:gravity="center"
+                    android:textColor="@color/lineOfText"/>
 
             </LinearLayout>
 

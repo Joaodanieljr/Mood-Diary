@@ -40,15 +40,7 @@ class MainActivity : AppCompatActivity() {
         // automatically populated from the PagerAdapter's page titles.
         tabs.setupWithViewPager(viewPager)
 
-        val fab: FloatingActionButton = findViewById(R.id.fab)
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-
-
-        }
-   }
+    }
 
 }
 
