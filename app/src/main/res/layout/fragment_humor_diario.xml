@@ -10,13 +10,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_margin="5dp"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="5dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="380dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="5dp">
 
@@ -34,18 +34,46 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:layout_margin="10dp"
             android:elevation="5dp"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/colorAccent">
+            android:padding="10dp"
+            android:outlineAmbientShadowColor="@color/colorAccent"
 
-            <TextView
-                android:id="@+id/textViewjoao"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="12,DEZ de 2019" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewjoao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="12,DEZ de 2019" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/lineOfText"
+                    android:max="4"
+                    android:progress="2"
+                    android:thumb="@drawable/neutral"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Normal Day"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
 
